@@ -1,4 +1,12 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("О сервисе");
-?>Добро пожаловать на страницу "О сервисе"! Мы — команда профессионалов, предоставляющих полный спектр услуг в сфере недвижимости. Если вы ищете надежного партнера для покупки, продажи или аренды жилья, мы готовы предложить вам лучшие условия и индивидуальный подход. Здесь вы можете ознакомиться с нашей историей, ценностями и узнать больше о наших услугах. Для удобства, вы можете перейти в разделы, чтобы узнать о вакансиях, новостях компании и наших агентах.<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+?><?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "page",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => ""
+	)
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

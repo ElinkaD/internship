@@ -1,4 +1,16 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Личный кабинет продавца");
-?>Добро пожаловать в личный кабинет! Здесь вы можете управлять своими объявлениями, следить за статусом ваших объектов недвижимости, редактировать информацию о себе и других параметрах. Этот раздел доступен только для зарегистрированных продавцов и администраторов. В случае возникновения вопросов или необходимости помощи, обратитесь к администратору.<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+?>Добро пожаловать в личный кабинет!<br>
+ <br>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.profile",
+	"",
+	Array(
+		"CHECK_RIGHTS" => "Y",
+		"SEND_INFO" => "N",
+		"SET_TITLE" => "Y",
+		"USER_PROPERTY" => array(),
+		"USER_PROPERTY_NAME" => ""
+	)
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
