@@ -5,8 +5,9 @@ $APPLICATION->SetTitle("О сервисе");
 	"bitrix:main.include",
 	"",
 	Array(
-		"AREA_FILE_SHOW" => "page",
+		"AREA_FILE_SHOW" => "file",
 		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => ""
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/about_serve.php"
 	)
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

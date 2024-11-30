@@ -131,3 +131,26 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style.css");
       </div>
     </div>
   </div>
+
+<?$current_page = $_SERVER["REQUEST_URI"];
+$is_home_page = ($current_page == "/" || $current_page == "/index.php");
+
+if (!$is_home_page):?>
+  <?$APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb", 
+	"inner_breadcrumb", 
+	array(
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"START_FROM" => "0",
+		"COMPONENT_TEMPLATE" => "inner_breadcrumb"
+	),
+	false
+);?>
+
+<div class="site-section border-bottom">
+	<div class="container">
+
+<?else:?>
+ 
+<? endif; ?>

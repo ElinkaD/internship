@@ -1,11 +1,10 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Биржа недвижимости");
-?>
-	<?
-   $arrFilter = ['PROPERTY_PRIORITY_DEAL' => "5"];
 
-   $APPLICATION->IncludeComponent(
+$arrFilter = ['PROPERTY_PRIORITY_DEAL' => "5"];
+
+$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
 	"slider", 
 	array(
@@ -80,91 +79,78 @@ $APPLICATION->SetTitle("Биржа недвижимости");
 			<div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
 				<div class="feature d-flex align-items-start">
 					 <?$APPLICATION->IncludeComponent(
-            "bitrix:main.include",
-            "",
-            Array(
-              "AREA_FILE_SHOW" => "file",
-              "AREA_FILE_SUFFIX" => "inc",
-              "EDIT_TEMPLATE" => "",
-              "PATH" => "/include/advantage_1.php"
-            )
-          );?>
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/advantage_1.php"
+	)
+);?>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
 				<div class="feature d-flex align-items-start">
 					 <?$APPLICATION->IncludeComponent(
-            "bitrix:main.include",
-            "",
-            Array(
-              "AREA_FILE_SHOW" => "file",
-              "AREA_FILE_SUFFIX" => "inc",
-              "EDIT_TEMPLATE" => "",
-              "PATH" => "/include/advantage_2.php"
-            )
-          );?>
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/advantage_2.php"
+	)
+);?>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
 				<div class="feature d-flex align-items-start">
 					 <?$APPLICATION->IncludeComponent(
-            "bitrix:main.include",
-            "",
-            Array(
-              "AREA_FILE_SHOW" => "file",
-              "AREA_FILE_SUFFIX" => "inc",
-              "EDIT_TEMPLATE" => "",
-              "PATH" => "/include/advantage_3.php"
-            )
-          );?>
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/advantage_3.php"
+	)
+);?>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-	
-  <?$APPLICATION->IncludeComponent(
-	"bitrix:news.line", 
-	"ad_line", 
-	array(
-		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "259200",
-		"CACHE_TYPE" => "A",
-		"COMPONENT_TEMPLATE" => "ad_line",
-		"DETAIL_URL" => "/obyavleniya/#ELEMENT_CODE#/",
-		"DISPLAY_BOTTOM_PAGER" => "N",
-		"DISPLAY_DATE" => "N",
-		"DISPLAY_NAME" => "Y",
-		"DISPLAY_PICTURE" => "N",
-		"DISPLAY_PREVIEW_TEXT" => "N",
-		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array(
-			0 => "NAME",
-			1 => "PREVIEW_TEXT",
-			2 => "PREVIEW_PICTURE",
-			3 => "PROPERTY_PRICE",
-			4 => "PROPERTY_TOTAL_AREA",
-			5 => "PROPERTY_COUNT_FLOOR",
-			6 => "PROPERTY_COUNT_BATHROOM",
-			7 => "PROPERTY_GARAGE",
-			8 => ""
-		),
-		"IBLOCKS" => array(
-			0 => "5",
-		),
-		"IBLOCK_TYPE" => "advert",
-		"NEWS_COUNT" => "9",
-		"SORT_BY1" => "ACTIVE_FROM",
-		"SORT_BY2" => "SORT",
-		"SORT_ORDER1" => "DESC",
-		"SORT_ORDER2" => "ASC"
-	),
-	false
+
+<?$APPLICATION->IncludeComponent(
+"bitrix:news.line",
+"ad_line",
+Array(
+	"ACTIVE_DATE_FORMAT" => "d.m.Y",
+	"CACHE_GROUPS" => "Y",
+	"CACHE_TIME" => "259200",
+	"CACHE_TYPE" => "A",
+	"COMPONENT_TEMPLATE" => "ad_line",
+	"DETAIL_URL" => "/obyavleniya/#ELEMENT_CODE#/",
+	"DISPLAY_BOTTOM_PAGER" => "N",
+	"DISPLAY_DATE" => "N",
+	"DISPLAY_NAME" => "Y",
+	"DISPLAY_PICTURE" => "N",
+	"DISPLAY_PREVIEW_TEXT" => "N",
+	"DISPLAY_TOP_PAGER" => "N",
+	"FIELD_CODE" => array(0=>"NAME",1=>"PREVIEW_TEXT",2=>"PREVIEW_PICTURE",3=>"PROPERTY_PRICE",4=>"PROPERTY_TOTAL_AREA",5=>"PROPERTY_COUNT_FLOOR",6=>"PROPERTY_COUNT_BATHROOM",7=>"PROPERTY_GARAGE",8=>""),
+	"IBLOCKS" => array(0=>"5",),
+	"IBLOCK_TYPE" => "advert",
+	"NEWS_COUNT" => "9",
+	"SORT_BY1" => "ACTIVE_FROM",
+	"SORT_BY2" => "SORT",
+	"SORT_ORDER1" => "DESC",
+	"SORT_ORDER2" => "ASC"
+)
 );?>
 
-  <?$APPLICATION->IncludeComponent("bitrix:news.line", "serve_line", Array(
+<?$APPLICATION->IncludeComponent("bitrix:news.line", "serve_line", Array(
 	"ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
 		"CACHE_GROUPS" => "Y",	// Учитывать права доступа
 		"CACHE_TIME" => "7776000",	// Время кеширования (сек.)
@@ -190,9 +176,9 @@ $APPLICATION->SetTitle("Биржа недвижимости");
 		"COMPONENT_TEMPLATE" => ".default"
 	),
 	false
-);?>
-	
-   <?$APPLICATION->IncludeComponent(
+);
+
+$APPLICATION->IncludeComponent(
 	"bitrix:news.line", 
 	"blog_line", 
 	array(
