@@ -2,8 +2,6 @@
 $is_home_page = ($current_page == "/" || $current_page == "/index.php");
 
 if (!$is_home_page):?>
-  </div>
-</div>
 
 <?else:?>
  

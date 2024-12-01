@@ -148,9 +148,6 @@ if (!$is_home_page):?>
 	false
 );?>
 
-<div class="site-section border-bottom">
-	<div class="container">
-
 <?else:?>
  
 <? endif; ?>
