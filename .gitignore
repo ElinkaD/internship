@@ -3,3 +3,4 @@ upload/
 
 !local/templates/home/components/bitrix/
 !bitrix/php_interface/migrations/
+!/local/templates/home/components/bitrix/news/ads_list/bitrix/

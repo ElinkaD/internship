@@ -5,7 +5,6 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)
 }
 
 /** @var array $arCurrentValues */
-
 $arTemplateParameters = array(
 	"DISPLAY_DATE" => Array(
 		"NAME" => GetMessage("T_IBLOCK_DESC_NEWS_DATE"),
@@ -77,4 +76,15 @@ if (($arCurrentValues['USE_SHARE'] ?? 'N') === 'Y')
 		"TYPE" => "STRING",
 		"DEFAULT" => "",
 	);
+
+	$arComponentParameters = array(
+	"PARAMETERS" => array(
+		'TITLE_ADS' => array(
+			'NAME' => 'Введите заголовок раздела объявлений:',
+			'TYPE' => 'STRING',
+			'PARENT' => 'BASE',
+			"DEFAULT" => "Объявления", 
+    ),
+ )
+);
 }

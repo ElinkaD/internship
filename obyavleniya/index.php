@@ -7,6 +7,7 @@ $APPLICATION->SetTitle("Объявления");
 	"bitrix:news", 
 	"ads_list", 
 	array(
+		"TITLE_ADS" => "Новые объекты недвижимости для вас",
 		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_SECTIONS_CHAIN" => "N",
 		"AJAX_MODE" => "N",
@@ -17,7 +18,7 @@ $APPLICATION->SetTitle("Объявления");
 		"BROWSER_TITLE" => "NAME",
 		"CACHE_FILTER" => "N",
 		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "36000000",
+		"CACHE_TIME" => " 259200",
 		"CACHE_TYPE" => "A",
 		"CATEGORY_CODE" => "CATEGORY",
 		"CATEGORY_IBLOCK" => "",

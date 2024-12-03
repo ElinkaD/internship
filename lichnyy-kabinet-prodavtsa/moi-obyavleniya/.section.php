@@ -1,6 +1,6 @@
 <?
 $sSectionName = "Мои объявления";
-$arDirProperties = Array(
+$arDirProperties = array(
    "description" => "Подраздел, где продавцы могут добавлять, редактировать и удалять свои объявления о продаже недвижимости."
 );
 ?>
