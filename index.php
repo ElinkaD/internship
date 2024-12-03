@@ -1,8 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Биржа недвижимости");
+?>
 
-$arrFilter = ['PROPERTY_PRIORITY_DEAL' => "5"];
+<?$arrFilter = ['PROPERTY_PRIORITY_DEAL' => "5"];
 
 $APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
@@ -90,6 +91,7 @@ $APPLICATION->IncludeComponent(
 );?>
 				</div>
 			</div>
+
 			<div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
 				<div class="feature d-flex align-items-start">
 					 <?$APPLICATION->IncludeComponent(
@@ -104,6 +106,7 @@ $APPLICATION->IncludeComponent(
 );?>
 				</div>
 			</div>
+
 			<div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
 				<div class="feature d-flex align-items-start">
 					 <?$APPLICATION->IncludeComponent(
@@ -118,6 +121,7 @@ $APPLICATION->IncludeComponent(
 );?>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 </div>
@@ -176,9 +180,9 @@ Array(
 		"COMPONENT_TEMPLATE" => ".default"
 	),
 	false
-);
+);?>
 
-$APPLICATION->IncludeComponent(
+<?$APPLICATION->IncludeComponent(
 	"bitrix:news.line", 
 	"blog_line", 
 	array(

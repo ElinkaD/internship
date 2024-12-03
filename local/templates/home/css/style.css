@@ -1317,7 +1317,7 @@ a:hover {
 }
 .prop-entry .prop-text {
   position: absolute;
-  bottom: -50px;
+  bottom: -75px; /*Увеличила расстояние так как в русской версии из-за длины слов получается список в 3 строки а не в две */
   width: 100%;
   z-index: 2;
   -webkit-transition: .3s all ease;

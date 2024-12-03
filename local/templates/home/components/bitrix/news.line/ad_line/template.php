@@ -22,23 +22,21 @@
 							<div class="inner">
 								<span class="price rounded"><?= $arItem['PROPERTY_PRICE_VALUE'] ?> <?= GetMessage("RUB") ?></span>
 								<h3 class="title"><?echo $arItem["NAME"]?></h3>
-								<p class="location">
-									<?= $arItem['PREVIEW_TEXT'] ?>
-								</p>
+								<p class="location"><?= $arItem['PREVIEW_TEXT'] ?></p>
 							</div>
 							<div class="prop-more-info">
 								<div class="inner d-flex">
 									<div class="col">
-										<?= GetMessage("AREA") ?> <strong><?= $arItem['PROPERTY_TOTAL_AREA_VALUE'] ?>m<sup>2</sup></strong>
+										<span><?= GetMessage("AREA") ?></span> <strong><?= $arItem['PROPERTY_TOTAL_AREA_VALUE'] ?>m<sup>2</sup></strong>
 									</div>
 									<div class="col">
-										<?= GetMessage("FLOOR") ?> <strong><?= $arItem['PROPERTY_COUNT_FLOOR_VALUE'] ?></strong>
+										<span><?= GetMessage("FLOOR") ?></span> <strong><?= $arItem['PROPERTY_COUNT_FLOOR_VALUE'] ?></strong>
 									</div>
 									<div class="col">
-										<?= GetMessage("BATHS") ?> <strong><?= $arItem['PROPERTY_COUNT_BATHROOM_VALUE'] ?></strong>
+										<span><?= GetMessage("BATHS") ?></span> <strong><?= $arItem['PROPERTY_COUNT_BATHROOM_VALUE'] ?></strong>
 									</div>
 									<div class="col">
-										<?= GetMessage("GARAGE") ?> <strong><?= $arItem['PROPERTY_GARAGE_VALUE'] ?></strong>
+										<span><?= GetMessage("GARAGE") ?></span> <strong><?= $arItem['PROPERTY_GARAGE_VALUE'] ?></strong>
 									</div>
 								</div>
 							</div>
