@@ -1,2 +1,5 @@
 bitrix/
 upload/
+
+!local/templates/home/components/bitrix/
+!bitrix/php_interface/migrations/
