@@ -132,10 +132,8 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style.css");
     </div>
   </div>
 
-<?$current_page = $_SERVER["REQUEST_URI"];
-$is_home_page = ($current_page == "/" || $current_page == "/index.php");
-
-if (!$is_home_page):?>
+<?
+if ($APPLICATION->GetCurPage(false) !== '/'):?>
   <?$APPLICATION->IncludeComponent(
 	"bitrix:breadcrumb", 
 	"inner_breadcrumb", 
