@@ -1,4 +1,5 @@
 <?
+$PERM["desktop_app"]["*"]="D";
 $PERM["lichnyy-kabinet-pokupatelya"]["2"]="D";
 $PERM["lichnyy-kabinet-pokupatelya"]["3"]="D";
 $PERM["lichnyy-kabinet-pokupatelya"]["4"]="D";
@@ -22,9 +23,6 @@ $PERM["include"]["9"]="W";
 $PERM["include"]["8"]="D";
 $PERM["include"]["5"]="D";
 $PERM["include"]["6"]="W";
-$PERM["desktop_app"]["9"]="W";
-$PERM["desktop_app"]["6"]="W";
-$PERM["desktop_app"]["*"]="D";
 $PERM["o-servise"]["7"]="R";
 $PERM["o-servise"]["9"]="W";
 $PERM["o-servise"]["6"]="W";

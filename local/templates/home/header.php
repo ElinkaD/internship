@@ -76,6 +76,8 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style.css");
           </div>
          
           <div class="col-6 col-md-6 text-right">
+                  <a href="/login/" style="margin-right: 10px;">Авторизация</a>
+
                   <?$APPLICATION->IncludeComponent(
                   "bitrix:main.include",
                   "",

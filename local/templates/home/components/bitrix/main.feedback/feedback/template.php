@@ -57,7 +57,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();?>
 		<?if($arParams["USE_CAPTCHA"] == "Y"):?>
 		<div class="form-row">
 			<div class="form-group col-auto">
-				<label><?=GetMessage("MFT_CAPTCHA_CODE")?><span class="mf-control-required">*</span></label><br/>
+				<label class="font-weight-bold"><?=GetMessage("MFT_CAPTCHA_CODE")?><span class="mf-control-required">*</span></label><br/>
 				<input type="text" if="mainFeedback_captcha" class="form-control" name="captcha_word" size="30" maxlength="50" value=""/><br/>
 			</div>
 			<div class="form-group col">
