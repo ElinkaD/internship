@@ -12,8 +12,8 @@ if (!empty($arResult['ERROR_MESSAGE']))
 }
 ?>
 
-<!-- <div class="site-section">
-	<div class="container"> -->
+<div class="site-section">
+	<div class="container" style="display: flex; justify-content: center; ">
 		<div class="col-md-12 col-lg-8 mb-5">
 			<form name="form_auth" method="post" target="_top" action="<?=$arResult["AUTH_URL"]?>"  class="p-5 bg-white border">
 				<label class="font-weight-bold"><?=GetMessage("AUTH_TITLE");?></label>
@@ -110,8 +110,8 @@ if (!empty($arResult['ERROR_MESSAGE']))
 				<?endif?>
 			</form>
 		</div>
-	<!-- </div>
-</div> -->
+	</div>
+</div>
 <script>
 <?if ($arResult["LAST_LOGIN"] <> ''):?>
 try{document.form_auth.USER_PASSWORD.focus();}catch(e){}
