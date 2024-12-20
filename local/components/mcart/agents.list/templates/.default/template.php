@@ -16,9 +16,9 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 
-echo '<pre>';
-print_r($arResult); // для разработки в конечном коде убрать
-echo '</pre>';
+// echo '<pre>';
+// print_r($arResult); // для разработки в конечном коде убрать
+// echo '</pre>';
 
 ?>
 <div class="site-section site-section-sm bg-light">
@@ -34,7 +34,7 @@ echo '</pre>';
             <?foreach ($arResult['AGENTS']['ITEMS'] as $agent): ?>
                 <div class="agent__card">
                     <div class="small-info"> 
-                        <div class="avatar" style="background-image: url(<?= !empty($agent['UF_AVA_PATH']) ? $agent['UF_AVA_PATH'] : '/images/no-avatar.jpg'?>');"></div>
+                        <div class="avatar" style="background-image: url('<?= !empty($agent['UF_AVA_PATH']) ? $agent['UF_AVA_PATH'] : $templateFolder . '/images/no-avatar.png'?>');"></div>
                         <div class="info">
                             <div class="name"><?= $agent['UF_NAME']?></div>
                         </div>
@@ -63,14 +63,18 @@ echo '</pre>';
                 </div>
             <? endforeach; ?>
         </div>
+        
         <div class="row">
             <div class="col-md-12 text-center">
+                <!-- /*
+                * Для постраничной навигации использовать компонент bitrix:main.pagenavigation
+                */ -->
                 <?php
                 $APPLICATION->IncludeComponent(
                     'bitrix:main.pagenavigation',
-                    'my_own',
+                    '.default',
                     [
-                        'NAV_OBJECT' => $arResult['NAV_OBJECT'],
+                        'NAV_OBJECT' => $arResult['AGENTS']['NAV_OBJECT'],
                         'SEF_MODE' => 'N',
                     ],
                     false
@@ -80,7 +84,3 @@ echo '</pre>';
         </div>
     </div>
 </div>
-
-<!-- /*
- * Для постраничной навигации использовать компонент bitrix:main.pagenavigation
- */ -->

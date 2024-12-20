@@ -20,18 +20,18 @@ $arComponentParameters = array(
             "TYPE" => "STRING", // Тип поля
             "DEFAULT" => "", // Значение по дефолту
         ),
-    ),
-    "PAGE_SIZE" => array(
-        "PARENT" => "BASE",
-        "NAME" => GetMessage("MCART_AGENTS_LIST_PAGE_SIZE"),
-        "TYPE" => "INTEGER",
-        "DEFAULT" => "5",
-    ),
-    "CACHE_TIME" => array(
-        "PARENT" => "CACHE_SETTINGS",
-        "NAME" => GetMessage("MCART_AGENTS_LIST_CACHE_TIME"),
-        "TYPE" => "INTEGER",
-        "DEFAULT" => "3600",
+        "PAGE_SIZE" => array(
+            "PARENT" => "BASE",
+            "NAME" => GetMessage("MCART_AGENTS_LIST_PAGE_SIZE"),
+            "TYPE" => "STRING",
+            "DEFAULT" => "5",
+        ),
+        "CACHE_TIME" => array(
+            "PARENT" => "CACHE_SETTINGS",
+            "NAME" => GetMessage("MCART_AGENTS_LIST_CACHE_TIME"),
+            "TYPE" => "STRING",
+            "DEFAULT" => "3600",
+        ),
     ),
 );
 ?>

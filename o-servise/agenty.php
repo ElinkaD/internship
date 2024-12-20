@@ -5,13 +5,11 @@ $APPLICATION->SetPageProperty("description", "Страница, на котор�
 $APPLICATION->SetTitle("Агенты");
 ?><?$APPLICATION->IncludeComponent(
 	"mcart:agents.list",
-	"",
+	".default",
 	Array(
-		"CACHE_TIME" => 3600,
+		"CACHE_TIME" => 10,
 		"HLBLOCK_TNAME" => "b_hlsys_real_estate_agents",
-		"PAGE_SIZE" => 5
+		"PAGE_SIZE" => 3,
 	)
-);?><br>
-<br>
-<img src="/local/components/mcart/agents.list/templates/.default/images/no-avatar.png" alt="">
+);?>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
