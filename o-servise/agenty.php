@@ -9,7 +9,7 @@ $APPLICATION->SetTitle("Агенты");
 	Array(
 		"CACHE_TIME" => 10,
 		"HLBLOCK_TNAME" => "b_hlsys_real_estate_agents",
-		"PAGE_SIZE" => 3,
+		"PAGE_SIZE" => 5,
 	)
 );?>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
