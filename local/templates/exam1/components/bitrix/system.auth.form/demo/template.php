@@ -11,7 +11,9 @@ if (!empty($arResult['ERROR_MESSAGE']))
 }
 CJSCore::Init(['socservices']);
 ?>
-
+<pre>
+	<?print_r($arResult)?>
+</pre>
 <?if($arResult["FORM_TYPE"] == "login"):?>
 <nav class="menu-block">
     <ul>
@@ -45,7 +47,7 @@ CJSCore::Init(['socservices']);
                     <input type="password" placeholder="<?=GetMessage("AUTH_PASSWORD")?>" name="USER_PASSWORD" maxlength="50" size="17" autocomplete="off" />
                 </div>
                 <div class="frm-row">
-                    <a href="user.php?forgot_password=yes" class="btn-forgot"><?=GetMessage("AUTH_FORGOT_PASSWORD_2")?></a>
+                    <a href="<?= $arResult['AUTH_FORGOT_PASSWORD_URL']?>" class="btn-forgot"><?=GetMessage("AUTH_FORGOT_PASSWORD_2")?></a>
                 </div>
                 <div class="frm-row">
                     <div class="frm-chk">
@@ -78,7 +80,7 @@ CJSCore::Init(['socservices']);
 				</div>
             </form>
         </li>
-        <li><a href="/login/?register=yes"><?=GetMessage("AUTH_REGISTER")?></a></li>
+        <li><a href="<?= $arResult['AUTH_REGISTER_URL']?>"><?=GetMessage("AUTH_REGISTER")?></a></li>
     </ul>
 </nav>
 <?endif;?>
