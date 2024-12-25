@@ -1,0 +1,11 @@
+<?
+$PERM["mission.php"]["2"]="D";
+$PERM["mission.php"]["3"]="D";
+$PERM["mission.php"]["4"]="D";
+$PERM["mission.php"]["7"]="R";
+$PERM["mission.php"]["9"]="R";
+$PERM["mission.php"]["8"]="R";
+$PERM["mission.php"]["5"]="D";
+$PERM["mission.php"]["6"]="R";
+$PERM["mission.php"]["*"]="D";
+?>
