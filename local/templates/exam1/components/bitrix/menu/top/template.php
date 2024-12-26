@@ -6,7 +6,7 @@
         <a href="" class="btn-menu btn-toggle"></a>
         <div class="menu popup-block">
             <ul class="">
-                <li class="main-page"><a href="">Главная</a></li>
+                <li class="main-page"><a href=""><?=GetMessage("MENU_TITLE")?></a></li>
 <?
 $previousLevel = 0;
 foreach($arResult as $arItem):?>
@@ -33,7 +33,7 @@ foreach($arResult as $arItem):?>
 	<?else:?>
 
 		<?if ($arItem["PERMISSION"] > "D"):?>
-
+			
 			<?if ($arItem["DEPTH_LEVEL"] == 1):?>
 				<li><a href="<?=$arItem["LINK"]?>" class="<?if ($arItem["SELECTED"]):?>root-item-selected<?else:?>root-item<?endif?>"><?=$arItem["TEXT"]?></a></li>
 			<?else:?>
@@ -58,6 +58,4 @@ foreach($arResult as $arItem):?>
         <div class="menu-overlay"></div>
     </div>
 </div>
-
-<div class="menu-clear-left"></div>
 <?endif?>

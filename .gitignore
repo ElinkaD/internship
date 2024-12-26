@@ -6,3 +6,5 @@ upload/
 !/local/templates/home/components/bitrix/news/ads_list/bitrix/
 !local/templates/exam1/components/bitrix
 !local/templates/exam1/components/bitrix/news/exam_news/bitrix
+!local/templates/exam1.2/components/bitrix
+!local/templates/exam1.2/components/bitrix/news/exam_news/bitrix

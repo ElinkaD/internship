@@ -11,9 +11,7 @@ if (!empty($arResult['ERROR_MESSAGE']))
 }
 CJSCore::Init(['socservices']);
 ?>
-<pre>
-	<?print_r($arResult)?>
-</pre>
+
 <?if($arResult["FORM_TYPE"] == "login"):?>
 <nav class="menu-block">
     <ul>

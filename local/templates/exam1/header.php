@@ -46,10 +46,10 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/reset.css");
                         <nav class="menu-block">
                             <ul>
                                 <li>
-                                    <a href="user.php"><?= htmlspecialchars($USER->GetFullName() . " " . $USER->GetLogin()) ?></a>
+                                    <a href="/t1/login/user.php"><?= htmlspecialchars($USER->GetFullName() . " " . $USER->GetLogin()) ?></a>
                                 </li>
                                 <li>
-                                    <a href="user.php?logout=yes">Выйти</a>
+                                    <a href="/t1/login/user.php?logout=yes">Выйти</a>
                                 </li>
                             </ul>
                         </nav>
@@ -72,22 +72,26 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/reset.css");
 
         <nav class="nav">
             <?$APPLICATION->IncludeComponent(
-                "bitrix:menu",
-                "top",
-                Array(
+                "bitrix:menu", 
+                "top", 
+                array(
                     "ALLOW_MULTI_SELECT" => "N",
                     "CHILD_MENU_TYPE" => "left",
                     "DELAY" => "N",
                     "MAX_LEVEL" => "3",
-                    "MENU_CACHE_GET_VARS" => array("",""),
+                    "MENU_CACHE_GET_VARS" => array(
+                    ),
                     "MENU_CACHE_TIME" => "3600",
                     "MENU_CACHE_TYPE" => "A",
                     "MENU_CACHE_USE_GROUPS" => "Y",
                     "ROOT_MENU_TYPE" => "top",
-                    "USE_EXT" => "N"
-                )
+                    "USE_EXT" => "N",
+                    "COMPONENT_TEMPLATE" => "top"
+                ),
+                false
             );?>
         </nav>
+        
         <?if ($APPLICATION->GetCurPage(false) !== '/t1/'):?>
             <div class="breadcrumbs-box">
                 <div class="inner-wrap">
@@ -96,8 +100,6 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/reset.css");
                     <span>Выставки и события</span>
                 </div>
             </div>
-        <?else:?>
-
         <? endif; ?>
 
         <div class="page">

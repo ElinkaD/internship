@@ -40,6 +40,22 @@ $arUrlRewrite=array (
     'PATH' => '/t1/products/index.php',
     'SORT' => 100,
   ),
+  16 => 
+  array (
+    'CONDITION' => '#^/t2/services/#',
+    'RULE' => '',
+    'ID' => 'bitrix:catalog',
+    'PATH' => '/t2/services/index.php',
+    'SORT' => 100,
+  ),
+  17 => 
+  array (
+    'CONDITION' => '#^/t2/products/#',
+    'RULE' => '',
+    'ID' => 'bitrix:catalog',
+    'PATH' => '/t2/products/index.php',
+    'SORT' => 100,
+  ),
   15 => 
   array (
     'CONDITION' => '#^/t1/otzyvy/#',
@@ -70,6 +86,22 @@ $arUrlRewrite=array (
     'RULE' => '',
     'ID' => 'bitrix:news',
     'PATH' => '/t1/news/index.php',
+    'SORT' => 100,
+  ),
+  18 => 
+  array (
+    'CONDITION' => '#^/t2/news/#',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/t2/news/index.php',
+    'SORT' => 100,
+  ),
+  19 => 
+  array (
+    'CONDITION' => '#^/t2/rew/#',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/t2/rew/index.php',
     'SORT' => 100,
   ),
   2 => 
