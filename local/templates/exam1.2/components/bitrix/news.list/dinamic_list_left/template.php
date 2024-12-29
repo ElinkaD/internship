@@ -16,7 +16,7 @@
 							<?$file = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>39, 'height'=>39), BX_RESIZE_IMAGE_PROPORTIONAL, false);?>                
 							<img src="<?=$file['src']?>">
 						<?else:?>
-							<img src="/t2/upload/no_photo_left_block.jpg">
+							<img src="<?=SITE_TEMPLATE_PATH?>/img/no_photo_left_block.jpg">
 						<?endif;?>
 					</div>
 					<div class="name-block">

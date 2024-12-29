@@ -4,7 +4,7 @@ $aMenuLinks = Array(
 		"Компания", 
 		"company/", 
 		Array(), 
-		Array("PARENT_TEXT"=>"это текст для пункта \"Компания\""), 
+		Array("PARENT_TEXT"=>"это текст для пункта \"Компания\"", "CLASS_STYLE"=>"color-red"), 
 		"" 
 	),
 	Array(
@@ -38,6 +38,13 @@ $aMenuLinks = Array(
 	Array(
 		"Отзывы", 
 		"/t2/rew/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Опросы", 
+		"/t2/ask/", 
 		Array(), 
 		Array(), 
 		"" 

@@ -1,4 +1,4 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Мебельная компания");
+$APPLICATION->SetTitle("Опросы");
 ?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
