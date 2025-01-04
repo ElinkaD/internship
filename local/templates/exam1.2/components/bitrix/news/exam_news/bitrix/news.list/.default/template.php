@@ -8,7 +8,7 @@ foreach($arResult["ITEMS"] as $arItem):
 	$IMG = SITE_TEMPLATE_PATH . "/img/no_photo.jpg";
 	
 	if(isset($arItem["PREVIEW_PICTURE"]["SRC"])):
-		$arFile = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>68, 'height'=>50), BX_RESIZE_IMAGE_PROPORTIONAL, true);
+		$arFile = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width' => 68, 'height' => 50), BX_RESIZE_IMAGE_EXACT, true);
 		$IMG = $arFile["src"];
 	endif;
 	?>
